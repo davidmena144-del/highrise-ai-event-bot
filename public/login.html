@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#0f172a" />
+<meta name="robots" content="noindex, nofollow" />
+<link rel="manifest" href="/manifest.webmanifest" />
+<link rel="icon" href="/icon-192.png" />
+<title>تسجيل الدخول - بوت فعاليات هاي رايز</title>
+<style>
+*{box-sizing:border-box}body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:#0f172a;color:#e2e8f0;font-family:"Segoe UI",Tahoma,"Noto Kufi Arabic",system-ui,sans-serif;padding:16px}
+form{width:100%;max-width:360px;background:#1e293b;border:1px solid #334155;border-radius:16px;padding:24px;display:flex;flex-direction:column;gap:14px}
+h1{font-size:20px;margin:0 0 4px;color:#fff}label{font-size:14px;color:#94a3b8;display:flex;flex-direction:column;gap:6px}
+input{font-size:16px;padding:12px;border-radius:10px;border:1px solid #475569;background:#0f172a;color:#fff}
+button{font-size:16px;font-weight:700;padding:12px;border:0;border-radius:12px;background:#4f46e5;color:#fff}button:disabled{opacity:.5}
+#err{color:#fca5a5;font-size:14px;min-height:20px}
+</style>
+</head>
+<body>
+<form id="f" autocomplete="on">
+<h1>🔒 بوت فعاليات هاي رايز الذكي</h1>
+<label>اسم المستخدم<input id="u" name="username" autocomplete="username" required /></label>
+<label>كلمة المرور<input id="p" name="password" type="password" autocomplete="current-password" required /></label>
+<div id="err" role="alert"></div>
+<button id="b" type="submit">دخول</button>
+</form>
+<script src="/login.js"></script>
+</body>
+</html>

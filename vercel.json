@@ -1,0 +1,8 @@
+{
+  "framework": null,
+  "installCommand": "npm ci",
+  "buildCommand": "npm run build && node scripts/vercel-prepare.mjs",
+  "outputDirectory": "static",
+  "functions": { "api/app.mjs": { "includeFiles": "{dist,public}/**", "maxDuration": 10 } },
+  "rewrites": [{ "source": "/(.*)", "destination": "/api/app" }]
+}

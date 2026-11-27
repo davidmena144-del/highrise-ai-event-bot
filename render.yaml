@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: highrise-ai-event-bot
+    runtime: docker
+    plan: free
+    healthCheckPath: /healthz
+    envVars:
+      - key: APP_USERNAME
+        sync: false
+      - key: APP_PASSWORD_HASH
+        sync: false
+      - key: SESSION_SECRET
+        sync: false
